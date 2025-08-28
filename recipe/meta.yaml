@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webrtcvad-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/webrtcvad-{{ version }}.tar.gz
   sha256: f1bed2fb25b63fb7b1a55d64090c993c9c9167b28485ae0bcdd81cf6ede96aea
 
 build:
-  number: 5
+  number: 6
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
 
